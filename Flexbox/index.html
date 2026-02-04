@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox</title>
+  <style>
+
+    @media(min-width: 768px){
+      /* when width will be 768 or greater then this thing we will be applied. */
+      .container-1{
+        display: flex;
+        /* align-items:flex-start; */
+        /* flex-direction: column; */
+      }
+
+      .container-2{
+        display: flex;
+        /* justify-content: flex-start; bydefault */
+        /* justify-content: center; */
+        justify-content: space-between;
+      }
+    }
+    
+
+    .container-3{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .container-1 div, .container-2 div, .container-3 div{
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .box-1{
+      flex: 2;
+      order: 2;
+    }
+
+    .box-2{
+      flex: 1;
+      order: 1;
+    }
+
+    .box-3{
+      flex: 1;
+      order: 3;
+    }
+
+    .container-2-box{
+      flex-basis: 27%;
+    }
+
+    .container-3-box{
+      flex-basis: 12%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-1">
+    <div class="box-1">
+      <h1>Box One</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    </div>
+    <div class="box-2">
+      <h1>Box Two</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    </div>
+    <div class="box-3">
+      <h1>Box Three</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    </div>
+  </div> 
+  
+  <div class="container-2">
+    <div class="container-2-box">
+      <h1>Box Four</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo accusamus temporibus nam quo quod, cum eligendi tenetur, commodi eveniet blanditiis architecto unde necessitatibus velit aliquid. Similique deserunt minima dicta suscipit? </p>
+    </div>
+    <div class="container-2-box">
+      <h1>Box Five</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa expedita facere debitis rerum iure ratione ullam laudantium quae repellendus aspernatur perspiciatis eius ipsa nobis soluta ipsum quod, veniam sint necessitatibus.</p>
+    </div>
+    <div class="container-2-box">
+      <h1>Box Six</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde repellendus aliquam placeat iste id porro consequatur sed recusandae repudiandae tenetur veniam, consequuntur nulla corporis reprehenderit delectus officia debitis mollitia! Deserunt.</p>
+    </div>
+  </div> 
+
+  <div class="container-3">
+    <div class="container-3-box">
+      <h1>Box Seven</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo accusamus temporibus nam quo quod, cum eligendi tenetur, commodi eveniet blanditiis architecto unde necessitatibus velit aliquid. Similique deserunt minima dicta suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolor! </p>
+    </div>
+    <div class="container-3-box">
+      <h1>Box Eight</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa expedita facere debitis rerum iure ratione ullam laudantium quae repellendus aspernatur perspiciatis eius ipsa nobis soluta ipsum quod, veniam sint necessitatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, velit!</p>
+    </div>
+    <div class="container-3-box">
+      <h1>Box Nine</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde repellendus aliquam placeat iste id porro consequatur sed recusandae repudiandae tenetur veniam, consequuntur nulla corporis reprehenderit delectus officia debitis mollitia! Deserunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, accusamus.</p>
+    </div>
+    <div class="container-3-box">
+      <h1>Box Ten</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo accusamus temporibus nam quo quod, cum eligendi tenetur, commodi eveniet blanditiis architecto unde necessitatibus velit aliquid. Similique deserunt minima dicta suscipit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, reiciendis!</p>
+    </div>
+    <div class="container-3-box">
+      <h1>Box Eleven</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa expedita facere debitis rerum iure ratione ullam laudantium quae repellendus aspernatur perspiciatis eius ipsa nobis soluta ipsum quod, veniam sint necessitatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, maiores.</p>
+    </div>
+    <div class="container-3-box">
+      <h1>Box Twelve</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde repellendus aliquam placeat iste id porro consequatur sed recusandae repudiandae tenetur veniam, consequuntur nulla corporis reprehenderit delectus officia debitis mollitia! Deserunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quos?</p>
+    </div>
+  </div> 
+
+</body>
+</html>
