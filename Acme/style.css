@@ -27,6 +27,13 @@ ul{
   color: white;
 }
 
+.dark{
+  padding: 15px;
+  background: #35424a;
+  color: white;
+  margin: 0 10px;
+}
+
 /*header*/
 header{
   background: #35424a;
@@ -135,6 +142,35 @@ header a:hover{
   width: 90px;
 }
 
+/* sidebar */
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+  width: 80%;
+  padding: 5px;
+}
+
+/* main-col */
+article#main-col{
+  float: left;
+  width: 65%;
+}
+
+/* Servies */
+
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+  background-color: #e6e6e6;
+}
+
+
 /* footer */
 footer{
   padding: 20px;
@@ -143,3 +179,41 @@ footer{
   background-color: #e8491d;
   text-align: center;
 }
+
+
+/* media quries */
+@media(max-width: 768px){
+  /* max width matlab max aatlu aana thi vadhare nai but aana thi ochhu hase to chalse. so basically aa vadi style tyare apply thase when viewport 768px and anathi less hase tyare */
+  header #branding, 
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  #showcase h1{
+    margin-top: 40px;
+  }
+  
+  #newsletter button, .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+
+} 
