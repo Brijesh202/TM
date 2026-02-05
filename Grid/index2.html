@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid_2</title>
+  <style>
+    .wrapper{
+      display: grid;
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+      /* grid-auto-rows: 100px; */
+      grid-auto-rows: minmax(100px, auto); /*Normally it will be 100px but if content of box goes beyong 100px then it will automatically set.*/
+    }
+
+    .nested{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-auto-rows: 70px;
+      gap: 1em;
+    }
+
+    .wrapper > div{
+      background: #eee;
+      padding: 1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background: #ddd;
+    }
+
+    .nested > div{
+      border: 1px solid #333;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iste pariatur ipsa aut magnam molestiae amet enim vitae unde dolores soluta aliquid tempora, voluptas corporis commodi quos dignissimos quod natus deleniti, voluptatibus suscipit. Illum itaque perspiciatis porro, placeat praesentium totam.
+    </div>
+    <div class="nested">
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+
+  </div>
+</body>
+</html>

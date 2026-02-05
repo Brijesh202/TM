@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    .wrapper{
+      display: grid;
+      grid-template-columns: 70% 30%;
+      /* column-gap: 1em;
+      row-gap: 1em; */
+      gap: 1em; /*this will do both column and row gap*/
+    }
+    .wrapper > div{
+      background: #eee;
+      padding: 1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos voluptatem harum eaque facere inventore consequatur autem, beatae id alias neque vitae labore, nesciunt iste, placeat qui quam? Eum modi facilis, numquam neque optio est similique, expedita repudiandae nostrum, excepturi architecto recusandae dolores corporis veniam? At asperiores maiores nesciunt ipsum quam, maxime excepturi vel veniam cum est sapiente magnam, accusantium aspernatur expedita soluta molestias, repellendus deleniti. Ducimus quidem, numquam natus quaerat voluptatem quam pariatur, quis quas modi fugit, reprehenderit at.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cupiditate optio nulla reprehenderit autem doloribus in ducimus expedita! Doloremque asperiores impedit, dolores debitis consequuntur deserunt alias illo modi saepe voluptates?</div>
+
+      <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos voluptatem harum eaque facere inventore consequatur autem, beatae id alias neque vitae labore, nesciunt iste, placeat qui quam? Eum modi facilis, numquam neque optio est similique, expedita repudiandae nostrum, excepturi architecto recusandae dolores corporis veniam? At asperiores maiores nesciunt ipsum quam, maxime excepturi vel veniam cum est sapiente magnam, accusantium aspernatur expedita soluta molestias, repellendus deleniti. Ducimus quidem, numquam natus quaerat voluptatem quam pariatur, quis quas modi fugit, reprehenderit at.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cupiditate optio nulla reprehenderit autem doloribus in ducimus expedita! Doloremque asperiores impedit, dolores debitis consequuntur deserunt alias illo modi saepe voluptates?</div>
+  </div>
+</body>
+</html>
